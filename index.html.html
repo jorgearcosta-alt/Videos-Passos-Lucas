@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasta da Equipe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    .icon {
+      width: 88px;
+      height: 88px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #1a73e8, #0d47a1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 32px rgba(26,115,232,0.35);
+    }
+
+    .icon svg {
+      width: 48px;
+      height: 48px;
+    }
+
+    .text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #888;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #1a73e8;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(26,115,232,0.4);
+      transition: transform 0.15s, box-shadow 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 10px rgba(26,115,232,0.3);
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #555;
+      text-align: center;
+      max-width: 240px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="icon">
+    <!-- Google Drive icon -->
+    <svg viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+      <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+      <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+      <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+      <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+      <path d="m59.8 53h-32.3l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="#2684fc"/>
+      <path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 27h27.45c0-1.55-.4-3.1-1.2-4.5z" fill="#ffba00"/>
+    </svg>
+  </div>
+
+  <div class="text">
+    <h1>Pasta da Equipe</h1>
+    <p>Acesso direto ao Google Drive</p>
+  </div>
+
+  <a class="btn" href="https://drive.google.com/drive/folders/1ZEHakd6M-B6_BsUspQwoDbw-0LZuFdvG?usp=sharing">
+    Abrir Pasta
+  </a>
+
+  <p class="hint">Toque em "Abrir Pasta" para acessar os arquivos compartilhados</p>
+
+  <script>
+    // Redireciona automaticamente após 1.5s
+    setTimeout(() => {
+      window.location.href = "https://drive.google.com/drive/folders/1ZEHakd6M-B6_BsUspQwoDbw-0LZuFdvG?usp=sharing";
+    }, 1500);
+  </script>
+
+</body>
+</html>
